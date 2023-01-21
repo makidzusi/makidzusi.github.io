@@ -5,19 +5,20 @@
         <h2
           class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6"
         >
-          Key moments in my career
+          {{ $t('timelineSection.title') }}
         </h2>
+        
       </div>
       <div class="container">
         <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50">
-          <template v-for="(item, idx) in data">
+          <template v-for="idx in timeLineItemsCount">
             <div class="flex flex-row-reverse md:contents" v-if="idx % 2 === 0">
               <div
                 class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
               >
-                <h3 class="font-semibold text-lg mb-1">{{ item.title }}</h3>
+                <h3 class="font-semibold text-lg mb-1">{{ $t(`timelineSection.items[${idx}].date`) }}</h3>
                 <p class="leading-tight text-justify">
-                  {{ item.desc }}
+                  {{ $t(`timelineSection.items[${idx}].desc`) }}
                 </p>
               </div>
               <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
@@ -42,9 +43,9 @@
               <div
                 class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
               >
-                <h3 class="font-semibold text-lg mb-1">{{ item.title }}</h3>
+                <h3 class="font-semibold text-lg mb-1">{{ $t(`timelineSection.items[${idx}].date`) }}</h3>
                 <p class="leading-tight text-justify">
-                  {{ item.desc }}
+                  {{ $t(`timelineSection.items[${idx}].desc`) }}
                 </p>
               </div>
             </div>
@@ -56,42 +57,5 @@
 </template>
 
 <script setup>
-const data = [
-  {
-    title: "June 2019",
-    desc: "Graduated from 11 classes of school, and began the first steps in web development",
-  },
-  {
-    title: "September 2019",
-    desc: "Went to college to major in computer systems programming",
-  },
-  {
-    title: "December 2019",
-    desc: "My first site in php, created my own MVC framework, based on it I created a small social network",
-  },
-  {
-    title: "May 2020",
-    desc: "Coursework in old programming language Prologue, an expert system was developed, got some skills in math/alogs",
-  },
-  {
-    title: "October 2020",
-    desc: "I tried myself in a game development unity hackathon, created a cool indie game in 24 hours, but the head of our team did not send it for verification, and then I became disillusioned with game development",
-  },
-  {
-    title: "January 2021 - Augus 2021",
-    desc: "Seriously began to study front-end development, tried his hand at vue, react, angular, rxjs",
-  },
-  {
-    title: "September 2021",
-    desc: "Got my first job as a junior front-end developer",
-  },
-  {
-    title: "April 2022",
-    desc: "Passed an interview for a middle front-end developer",
-  },
-  {
-    title: "Now",
-    desc: "I am here now",
-  },
-];
+const timeLineItemsCount = 11
 </script>

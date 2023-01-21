@@ -1,0 +1,68 @@
+{
+    "heroSection": {
+        "subtitle": "Hello, there!👋",
+        "title": "Hey, I Am Stanislav Shevchenko, Frontend Developer",
+        "desc": "I design and code beautifully simple things, and I love what I do."
+    },
+    "skillsSection": {
+        "title": "My skills",
+        "desc" : "I have experience in an extensive technology stack"
+    },
+    "timelineSection" :{
+        "title": "Key moments in my career",
+        "items": [
+            {
+                "date": "June 2019",
+                "desc": "Graduated from 11 classes of school and began to be interested in development"
+            },
+            {
+                "date": "September 2019",
+                "desc": "Entered the Amur State University at the faculty of secondary vocational education with a degree in 'programming in computer systems'"
+            },
+            {
+                "date": "December 2019",
+                "desc": "Started studying web development, wrote my first mvc framework in php and based on it I made my first completed social network pet project"
+            },
+            {
+                "date": "May 2020",
+                "desc": "I tried a lot of technologies from assembler to web development, wrote several term papers in languages: C ++ and Prolog"
+            },
+            {
+                "date": "October 2020",
+                "desc": "I tried myself in gamedev at a hackathon, I made a game all by myself, but the head of the team didn’t push it to the competition, since then I don’t like gamedev😡"
+            },
+            {
+                "date": "January 2021 - August 2021",
+                "desc": "Seriously started doing web development, tried myself in: React, Vue, rxjs, creating spa"
+            },
+            {
+                "date": "June 2021",
+                "desc": "Graduated from college with a diploma with honors (one 4 in databases, I was too lazy to describe step by step how to write queries)"
+            },
+            {
+                "date": "September 2021",
+                "desc": "I got my first job as a frontend developer, developing a control system for a distributed control system for street billboards"
+            },
+            {
+                "date": "April 2022",
+                "desc": "Got an offer for a middle frontend developer in an outsourcing company"
+            },
+            {
+                "date": "September 2022",
+                "desc": "Entered the Blagoveshchensk Pedagogical University with a degree: 'Information Systems and Technologies'"
+            },
+            {
+                "date": "December 2022",
+                "desc": "Promoted to senior frontend developer, started in-company training, lead frontend developer on several large projects"
+            },
+            {
+                "date": "Now",
+                "desc": "I'm waiting for your offers 👋"
+            }
+        ]
+    },
+    "links": {
+        "skills": "Skills",
+        "home": "Home"
+    }
+}

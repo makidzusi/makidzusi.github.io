@@ -5,11 +5,11 @@
         <h2
           class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6"
         >
-          My skills
+        {{ $t('skillsSection.title') }}
         </h2>
 
         <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">
-          I have experience in an extensive technology stack
+          {{ $t('skillsSection.desc') }}
         </p>
       </div>
       <div>

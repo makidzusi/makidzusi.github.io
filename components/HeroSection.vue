@@ -12,17 +12,17 @@
             <p
               class="text-indigo-500 md:text-lg xl:text-xl font-semibold mb-4 md:mb-6"
             >
-              Hello, there!👋
+              {{ $t('heroSection.subtitle') }}
             </p>
 
             <h1
               id="hero-title"
               class="text-black-800 text-4xl sm:text-5xl md:text-6xl font-bold mb-8 md:mb-12"
             >
-              Hey, I Am Stanislav Shevchenko, Frontend Developer
+            {{ $t('heroSection.title') }}
             </h1>
             <p class="text-xl text-gray-500">
-              I design and code beautifully simple things, and I love what I do.
+              {{ $t('heroSection.desc') }}
             </p>
           </div>
 

@@ -25,8 +25,14 @@
         :href="link.path"
         class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100"
       >
-        {{ link.title }}</a
+        {{ $t(`links.${link.key}`) }}</a
       >
+      <NuxtLink
+        class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100"
+        :to="switchLocalePath(locale === 'ru' ? 'en' : 'ru')"
+      >
+        {{ locale === "ru" ? "English" : "Русский" }}
+      </NuxtLink>
     </nav>
     <Transition
       enter-active-class="duration-300 ease-out"
@@ -65,4 +71,7 @@
 <script setup>
 import links from "../data/links";
 const isShowDrawer = ref(false);
+const localePath = useLocalePath();
+const switchLocalePath = useSwitchLocalePath();
+const { locale, t } = useI18n();
 </script>

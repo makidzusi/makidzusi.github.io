@@ -1,10 +1,10 @@
 export default [
     {
-        title: 'Skills',
+        key: 'skills',
         path: '#skills'
     },
     {
-        title: 'Home',
+        key: 'home',
         path: '#home',
         
     }

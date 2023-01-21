@@ -10,7 +10,7 @@
             :href="link.path"
             class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
           >
-            {{ link.title }}</a
+            {{ $t(`links.${link.key}`) }}</a
           >
         </nav>
 
