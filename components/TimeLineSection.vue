@@ -44,8 +44,8 @@
                 class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
               >
                 <h3 class="font-semibold text-lg mb-1">{{ $t(`timelineSection.items[${idx}].date`) }}</h3>
-                <p class="leading-tight text-justify">
-                  {{ $t(`timelineSection.items[${idx}].desc`) }}
+                <p class="leading-tight text-justify" v-html="$t(`timelineSection.items[${idx}].desc`)">
+                 
                 </p>
               </div>
             </div>
@@ -57,5 +57,5 @@
 </template>
 
 <script setup>
-const timeLineItemsCount = 11
+const timeLineItemsCount = 12
 </script>
